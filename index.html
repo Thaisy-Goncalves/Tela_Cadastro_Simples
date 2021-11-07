@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Simples</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+</head>
+<body>
+    
+    <div>
+        <h1 class="title">Cadrasto de Pets</h1>
+        <p class="subtitle">Adicione informações do seus animaizinhos</p>
+    </div>
+
+    <form>
+
+<!--============= PET =============-->
+
+
+        <fieldset class="group"> <!--Separador de campos, algo mais ou menos assim-->
+            
+            <div class="campo">
+            
+                <label for="nome">Nome do Pet</label>
+                <input type="text" name="nome" id="nome" required>
+            
+            </div>
+
+            <div class="campo">
+            
+                <label for="idade">Idade</label>
+                <input type="text" name="idade" id="idade" required>
+            
+            </div>
+
+            <div class="campo">
+            
+                <label for="sexo">Sexo</label>
+                <label>
+                <input type="radio" name="sexo" value="feminino" required>Feminino</label>
+                <label>
+                <input type="radio" name="sexo" value="masculino" required>Masculino</label>
+
+            <div class="campo">
+            
+                <label for="especie">Especie</label>
+                <input type="text" name="especie" id="especie" required>
+            
+            </div>
+
+            <div class="campo">
+                <label for="raça">Raça</label>
+                <input type="text" name="raça" id="raça" required>
+            </div>
+
+        </fieldset>
+
+<!--============= DONO DO PET =============-->
+
+        <div>
+            <h1 class="title">Cadrasto do Dono do Pet</h1>
+            <p class="subtitle">Adicione suas informações de contato</p>
+        </div>
+
+        <fieldset class="group">
+            
+            <div class="campo">
+            
+                <label for="name">Seu Nome</label>
+                <input type="text" name="name" id="name" required>
+            
+            </div>
+
+            <div class="campo">
+            
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            
+            </div>
+
+            <div class="campo">
+            
+                <label for="tel">Número de Telefone</label>
+                <input type="tel" name="tel" id="tel" required>
+            
+            </div>
+        
+        </fieldset>
+
+        <button type="submit" class="button">Enviar</button>
+
+    </form>    
+
+</body>
+</html>
